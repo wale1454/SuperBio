@@ -1,6 +1,9 @@
-# OpenAI API Quickstart - Python example app
+# Superhero Name Generator - Unleash Your Superhero Alter-Ego
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
+This is an AI Superhero Name Generator app which uses the OpenAI GPT-3 [API](https://beta.openai.com/docs/quickstart) to give you a super hero name based on a specific characteristic/ fun trait you input in it. 
+
+It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework.  
+Follow the instructions below to get set up.
 
 ## Setup
 
@@ -11,14 +14,14 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 3. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-python
+   $ mkdir Superhero_Name_Generator
    ```
 
 4. Create a new virtual environment
 
    ```bash
-   $ python -m venv venv
-   $ . venv/bin/activate
+   $ virtualenv newEnvironment
+   $ source newEnvironment/bin/activate
    ```
 
 5. Install the requirements
@@ -27,18 +30,15 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    $ pip install -r requirements.txt
    ```
 
-6. Make a copy of the example environment variables file
+
+6. Add your [API key](https://beta.openai.com/account/api-keys) to the app.py file replacing "OPENAI API KEY"
+
+7. Run the app
 
    ```bash
-   $ cp .env.example .env
-   ```
-
-7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
-
-8. Run the app
-
-   ```bash
+   $ export FLASK_APP=app.py
+   $ export FLASK_ENV=development
    $ flask run
    ```
 
-You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+You should be able to access the app at [http://localhost:5000](http://localhost:5000)

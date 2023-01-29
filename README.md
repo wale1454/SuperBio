@@ -10,12 +10,19 @@ This is an AI Superhero Name Generator app which uses the OpenAI GPT-3 [API](htt
 
 
 
-https://user-images.githubusercontent.com/31905212/214253892-c5f0b1ab-613c-4a24-9bbf-3b559192aaed.mp4      
-
-
-
-https://user-images.githubusercontent.com/31905212/214254208-7e4259dc-7ecd-469e-b04f-21af29b57113.mp4
-
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <video src="https://user-images.githubusercontent.com/31905212/214253892-c5f0b1ab-613c-4a24-9bbf-3b559192aaed.mp4   ">
+      </td>
+      <td>
+        <video src="https://user-images.githubusercontent.com/31905212/214254208-7e4259dc-7ecd-469e-b04f-21af29b57113.mp4">
+      </td>
+    </tr>
+ 
+  </tbody>
+</table>
 
 ----
 

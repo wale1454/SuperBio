@@ -1,25 +1,45 @@
 <!DOCTYPE html>
+<html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenAI Quickstart</title>
-  <link
-    rel="shortcut icon"
-    href="{{ url_for('static', filename='dog.png') }}"
-  />
-  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
-</head>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='dog.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
+  <style>
+
+    @media only screen and (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+      .icon {
+        width: 50%;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      input[type="text"], input[type="submit"] {
+        width: 100%;
+        margin: 10px 0;
+      }
+      .result {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    }
+    
+  </style>
+</head>
 <body>
   <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
-  <h3>Unleash Your Superhero Alter-Ego </h3>
-
+  <h3>Unleash Your Superhero Alter-Ego</h3>
   <form action="/" method="post">
-
     <input type="text" name="animal" placeholder="Enter a fun trait that defines you" required />
     <input type="submit" value="Generate Superhero names" />
   </form>
 
-  {% if result %}
-  <div class="result">{{ result }}</div>
-  {% endif %}
-
+{% if result %}
+<div class="result">{{ result }}</div>
+{% endif %}
 </body>
+</html>
